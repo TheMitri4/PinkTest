@@ -961,6 +961,7 @@ body{
 
 .price{
 	background: #f2f2f2;
+	display: none;
 }
 
 /* contacts */
@@ -1065,6 +1066,7 @@ body{
 .map{
 	height: 300px;
 	background: aqua;
+	display: none;
 }
 
 /* page-footer */
