@@ -122,32 +122,43 @@
 		</a>
 	</section>
 	<section class="price">
-		<table class="price__table">
-			<tr>
-				<td></td>
-				<td>БАЗА <br> 1,99 USD</td>
-				<td>СТАНДАРТ <br> 3,99 USD</td>
-				<td>АНЛИМ <br> 9,99 USD</td>
-			</tr>
-			<tr>
-				<td>Розовый фильтр</td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>Смайлики</td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>Комментарии</td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-		</table>
+		<div class="container">	
+			<table class="price__table">
+				<thead class="price__tablehead">
+					<tr class="">
+						<td class="tablehead__cell--empty tablehead__mobile--none"></td>
+						<td class="tablehead__cell"><p class="tablehead__title">БАЗА</p>  <p class="tablehead__price"> 1,99 USD</p></td>
+						<td class="tablehead__cell"><p class="tablehead__title">СТАНДАРТ</p>  <p class="tablehead__price">3,99 USD</p></td>
+						<td class="tablehead__cell"><p class="tablehead__title">АНЛИМ</p>  <p class="tablehead__price">9,99 USD</p></td>
+					</tr>
+				</thead>
+				<tbody class="price__tablebody">
+					<tr>
+						<td class="tablebody__cell tablehead__mobile--none"><p class="tablebody__title">Розовый фильтр</p></td>
+						<td class="tablebody__cell tablebody__yes"><p class="tablebody__title--mobile">Розовый фильтр</p></td>
+						<td class="tablebody__cell tablebody__yes"><p class="tablebody__title--mobile">Розовый фильтр</p></td>
+						<td class="tablebody__cell tablebody__yes"><p class="tablebody__title--mobile">Розовый фильтр</p></td>
+					</tr>
+					<tr>
+						<td class="tablebody__cell tablehead__mobile--none"><p class="tablebody__title">Смайлики</p></td>
+						<td class="tablebody__cell tablebody__no"><p class="tablebody__title--mobile">Смайлик</p></td>
+						<td class="tablebody__cell tablebody__yes"><p class="tablebody__title--mobile">Смайлик</p></td>
+						<td class="tablebody__cell tablebody__yes"><p class="tablebody__title--mobile">Смайлик</p></td>
+					</tr>
+					<tr>
+						<td class="tablebody__cell tablehead__mobile--none"><p class="tablebody__title">Комментарии</p></td>
+						<td class="tablebody__cell tablebody__no"><p class="tablebody__title--mobile">Комментарии</p></td>
+						<td class="tablebody__cell tablebody__no"><p class="tablebody__title--mobile">Комментарии</p></td>
+						<td class="tablebody__cell tablebody__yes"><p class="tablebody__title--mobile">Комментарии</p></td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="price__toggles">
+				<button class="price__toggle" type="button"><span class="visually-hidden">1</span></button>
+				<button class="price__toggle active" type="button"><span class="visually-hidden">2</span></button>
+				<button class="price__toggle" type="button"><span class="visually-hidden">3</span></button>
+			</div>
+		</div>	
 	</section>
 	<section class="contacts container">
 		<h2 class="contacts__title">Остались вопросы?<br>Свяжитесь с нами!</h2>
@@ -167,7 +178,7 @@
 		</ul>
 	</section>
 	<section class="map">
-		
+		<img src="img/map-mobile.jpg">
 	</section>
 	<footer class="page-footer container">
 		<a href="#" class="page-footer__logo"><span class="visually-hidden">Pink</span></a>
@@ -184,6 +195,6 @@
 		</ul>
 		<p class="page-footer__made-by">Разработано<a href="#" class="htmlacademy-link"></a></p>
 	</footer>
-	<script src="js/main.js"></script>
+	<script src="js/main.js" await></script>
 </body>
 </html>

@@ -6,6 +6,8 @@ var sliderPrev = document.querySelector(".slider__prev");
 var sliderNext = document.querySelector(".slider__next");
 var sliderItemListLastChild = sliderItemList[sliderItemList.length-1];
 var sliderDotsListLastChild = sliderDotsList[sliderDotsList.length-1];
+var priceDotsList = document.querySelectorAll(".price__toggle");
+var priceTable = document.querySelector(".price__table");
 
 var el = document.querySelector(".slider");
 
@@ -32,6 +34,31 @@ function changeSlide(i) {
 			this.classList.add("active");
 			document.querySelector(".slider__item.active").classList.remove("active");
 			sliderItemList[i].classList.add("active");
+		}
+	});
+}
+
+for (var i = 0; i < priceDotsList.length; i++) {
+	changePrice(i);
+}
+
+function changePrice(i) {
+	priceDotsList[i].addEventListener("click", function (evt) {
+		evt.preventDefault();
+		if (!this.classList.contains("active")) {
+			document.querySelector(".price__toggle.active").classList.remove("active");
+			this.classList.add("active");
+		}
+		switch(i){
+			case 0:
+				priceTable.style.transform = "translateX(0)";
+				break;
+			case 1:
+				priceTable.style.transform = "translateX(-81.5vw)";
+				break;
+			case 2:
+				priceTable.style.transform = "translateX(-164vw)";
+				break;	
 		}
 	});
 }
@@ -74,6 +101,7 @@ sliderNext.addEventListener('click', function (evt) {
 	evt.preventDefault();
 	nextSlide();
 });
+
 
 // touch
 
