@@ -1413,12 +1413,49 @@ body{
 /* map */
 
 .map{
-	
+	height: 200px;
+	position: relative;
 }
 
+.map::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-image: url(../img/bg-triangle-white-footer.svg);
+	z-index: 2;
+	height: 53px;
+	background-position: center -167px;
+}
+
+@media (min-width: 660px){
+	.map{
+		height: 375px;	
+	}	
+	
+	.map::before{
+		height: 77px;
+		background-position: center -142px;
+	}
+}
+
+@media (min-width: 960px){
+	.map{
+		height: 520px;	
+	}	
+	
+	.map::before{
+		height: 157px;
+		background-position: center -65px;
+	}
+}
+
+/*
 .map img{
 	width: 100%;
 }
+*/
 
 /* page-footer */
 
@@ -1426,6 +1463,8 @@ body{
 	display: none;
 	padding: 0 20px;
 	justify-content: space-between;
+	padding-top: 36px;
+	padding-bottom: 37px;
 }
 
 .page-footer__logo{
@@ -1457,6 +1496,7 @@ body{
 	font-weight: normal;
 	line-height: 18px;
 	color: #283645;
+	margin: 0;
 }
 
 .htmlacademy-link{
@@ -1486,6 +1526,10 @@ body{
 }
 
 @media (min-width: 960px){
+	.page-footer{
+		padding-top: 70px;
+		padding-bottom: 72px;
+	}
 	
 	.page-footer__logo--desktopsvg{
 		display: block;
