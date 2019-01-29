@@ -161,3 +161,14 @@ swipedetect(el, function(swipedir){
         prevSlide();
 	}
 })
+
+//GoogleMaps
+
+function initMap() {
+    var coordinates = {lat: 59.936470, lng: 30.321097},
+    
+        map = new google.maps.Map(document.getElementById('map'), {
+            center: coordinates
+        });
+}
+
