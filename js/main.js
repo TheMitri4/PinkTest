@@ -102,7 +102,6 @@ sliderNext.addEventListener('click', function (evt) {
 	nextSlide();
 });
 
-
 // touch
 
 function swipedetect(el, callback){

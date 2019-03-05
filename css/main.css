@@ -1004,7 +1004,6 @@ body{
 
 .slider__item.active{
 	display: flex;
-/*	animation: nextSlide 2s;*/
 }
 
 .slider__item.awaySlide{
@@ -1420,7 +1419,7 @@ body{
 .map::before{
 	content: "";
 	position: absolute;
-	top: 0;
+	top: -1px;
 	width: 100%;
 	background-repeat: no-repeat;
 	background-image: url(../img/bg-triangle-white-footer.svg);
